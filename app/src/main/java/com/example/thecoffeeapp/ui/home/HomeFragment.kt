@@ -45,9 +45,9 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupBackgroundImage() {
-        // Load background image with proper error handling
+        // Load the coffee cup image from a direct URL
         Glide.with(requireContext())
-            .load("https://creator.nightcafe.studio/creation/iZK3qbeqDEaVQ4TVl3j6/a-warm-cup-of-coffee-with-visible-hot-steam-hot-creamy-bubbles-on-the-surface-of-the-coffee-bokeh-ba")
+            .load("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg")
             .centerCrop()
             .transition(DrawableTransitionOptions.withCrossFade())
             .error(android.R.drawable.ic_menu_gallery)
