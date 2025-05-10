@@ -29,10 +29,8 @@ class CoffeeRepository(private val coffeeLogDao: CoffeeLogDao) {
         }
     }
 
-    suspend fun clearAllLogs() {
-        withContext(Dispatchers.IO) {
-            coffeeLogDao.deleteAllLogs()
-        }
+    suspend fun clearAllLogs(): Int = withContext(Dispatchers.IO) {
+        coffeeLogDao.deleteAllLogs()
     }
 
     companion object {
