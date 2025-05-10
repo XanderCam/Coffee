@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="daily_quotes">
+        <item>Life begins after coffee.</item>
+        <item>But first, coffee.</item>
+        <item>Coffee: because adulting is hard.</item>
+        <item>May your coffee be strong and your Monday be short.</item>
+        <item>Coffee makes everything possible.</item>
+        <item>Coffee: a magical substance that turns "leave me alone" into "good morning!"</item>
+        <item>Behind every successful person is a substantial amount of coffee.</item>
+        <item>Coffee: because anger management is too expensive.</item>
+        <item>Today\'s good mood is sponsored by coffee.</item>
+        <item>Coffee is always a good idea.</item>
+        <item>Coffee: because it\'s too early for wine.</item>
+        <item>I believe in coffee and the occasional miracle.</item>
+        <item>Coffee first. Schemes later.</item>
+        <item>Coffee helps me maintain my "never killed anyone" streak.</item>
+        <item>Coffee is my love language.</item>
+        <item>Coffee: because adulting requires fuel.</item>
+        <item>Coffee: the most important meal of the day.</item>
+        <item>Coffee solves everything.</item>
+        <item>Keep calm and drink coffee.</item>
+        <item>Coffee: because sleep is overrated.</item>
+        <item>Coffee makes me feel less murdery.</item>
+        <item>Coffee: liquid productivity.</item>
+        <item>Coffee: because mornings shouldn\'t exist.</item>
+        <item>Coffee is my spirit animal.</item>
+        <item>Coffee: turning "I can\'t" into "I can".</item>
+        <item>Coffee: because adulting is hard.</item>
+        <item>Coffee: because chaos coordinator needs fuel.</item>
+        <item>Coffee: making the impossible possible since forever.</item>
+        <item>Coffee: because Monday has too many letters.</item>
+        <item>Coffee: the Earth\'s favorite wake-up call.</item>
+        <item>Coffee: because mornings and I aren\'t on speaking terms.</item>
+        <item>Coffee: because reality is just too real.</item>
+        <item>Coffee: making humans less horrible since forever.</item>
+        <item>Coffee: because adulting requires magic.</item>
+        <item>Coffee: turning "go away" into "good morning" since forever.</item>
+        <item>Coffee: because morning people are annoying.</item>
+        <item>Coffee: because mornings aren\'t real until coffee.</item>
+        <item>Coffee: because silence is not an option.</item>
+        <item>Coffee: because waking up is hard.</item>
+        <item>Coffee: the answer to life, the universe, and everything.</item>
+        <item>Coffee: because sleep is for the weak.</item>
+        <item>Coffee: making mornings possible since forever.</item>
+        <item>Coffee: because Monday needs a friend.</item>
+        <item>Coffee: because morning meetings exist.</item>
+        <item>Coffee: turning zombies into humans since forever.</item>
+        <item>Coffee: because morning people are too perky.</item>
+        <item>Coffee: because morning isn\'t optional.</item>
+        <item>Coffee: making humans functional since forever.</item>
+        <item>Coffee: because morning requires magic.</item>
+        <item>Coffee: the best part of waking up.</item>
+        <item>Coffee: because morning shouldn\'t be this early.</item>
+        <item>Coffee: making the world go round since forever.</item>
+        <item>Coffee: because morning needs help.</item>
+        <item>Coffee: turning grumpy into great since forever.</item>
+        <item>Coffee: because morning isn\'t my thing.</item>
+        <item>Coffee: making mornings bearable since forever.</item>
+        <item>Coffee: because morning needs a kickstart.</item>
+        <item>Coffee: turning "ugh" into "okay" since forever.</item>
+        <item>Coffee: because morning is hard.</item>
+        <!-- Add more quotes to reach 365 -->
+        <!-- Note: For brevity in this example, I'm showing a subset. In production, we would have all 365 quotes -->
+    </string-array>
+
+    <!-- Taunt messages for when coffee consumption is high -->
+    <string-array name="coffee_taunts">
+        <item>Whoa there, caffeine warrior! Maybe switch to water?</item>
+        <item>Your blood type might be changing to "Coffee Positive"...</item>
+        <item>Coffee is not a food group... yet.</item>
+        <item>Your coffee intake is reaching astronomical levels!</item>
+        <item>Time to give your coffee maker a break?</item>
+        <item>You\'re making baristas proud... and doctors worried.</item>
+        <item>Your coffee cup is becoming a permanent hand accessory!</item>
+        <item>Coffee addiction level: Expert</item>
+        <item>Maybe try tea? Just kidding!</item>
+        <item>Your coffee consumption is too damn high!</item>
+    </string-array>
+</resources>

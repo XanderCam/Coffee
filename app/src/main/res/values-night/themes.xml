@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme -->
+    <style name="Theme.TheCoffeeApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/coffee_light</item>
+        <item name="colorPrimaryVariant">@color/coffee_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/cream_light</item>
+        <item name="colorSecondaryVariant">@color/cream</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar and Navigation bar colors -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/cream_light</item>
+        <item name="android:textColorSecondary">@color/cream</item>
+        <item name="android:textColorHint">@color/coffee_light</item>
+        
+        <!-- Card styles -->
+        <item name="cardBackgroundColor">@color/coffee_dark</item>
+        
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.TheCoffeeApp.Button.Dark</item>
+    </style>
+
+    <!-- Custom Button style for dark theme -->
+    <style name="Widget.TheCoffeeApp.Button.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/coffee_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Glass effect style for dark theme -->
+    <style name="GlassEffect">
+        <item name="android:background">@color/black</item>
+        <item name="android:alpha">0.85</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+</resources>

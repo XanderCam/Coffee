@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Coffee theme colors -->
+    <color name="coffee_dark">#4A3728</color>
+    <color name="coffee_medium">#795548</color>
+    <color name="coffee_light">#A1887F</color>
+    <color name="cream">#D7CCC8</color>
+    <color name="cream_light">#EFEBE9</color>
+    
+    <!-- Standard colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Theme colors -->
+    <color name="primary">@color/coffee_medium</color>
+    <color name="primary_dark">@color/coffee_dark</color>
+    <color name="primary_variant">@color/coffee_light</color>
+    <color name="secondary">@color/cream</color>
+    <color name="secondary_variant">@color/cream_light</color>
+    
+    <!-- Status bar and navigation colors -->
+    <color name="status_bar">@color/coffee_dark</color>
+    <color name="navigation_bar">@color/coffee_dark</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_hint">#61000000</color>
+</resources>
