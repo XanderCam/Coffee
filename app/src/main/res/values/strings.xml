@@ -10,4 +10,11 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    
+    <!-- Home Fragment -->
+    <string name="background_image">Coffee background image</string>
+    <string name="today_count_label">Today\'s Coffee Count</string>
+    <string name="yesterday_count_label">Yesterday\'s Count</string>
+    <string name="add_cup_button">Add Cup</string>
+    <string name="loading_quote">Loading daily quote…</string>
 </resources>
