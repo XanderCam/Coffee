@@ -12,21 +12,29 @@ interface CoffeeLogDao {
     @Query("SELECT * FROM coffee_logs ORDER BY timestamp DESC")
     fun getAllLogs(): LiveData<List<CoffeeLog>>
 
-    @Query("SELECT COUNT(*) FROM coffee_logs WHERE date(timestamp/1000, 'unixepoch') = date('now')")
+    @Query("""
+        SELECT COUNT(*) FROM coffee_logs 
+        WHERE strftime('%Y-%m-%d', datetime(timestamp / 1000, 'unixepoch')) = strftime('%Y-%m-%d', 'now')
+    """)
     fun getTodaysCupCount(): LiveData<Int>
 
     @Query("""
         SELECT COUNT(*) FROM coffee_logs 
-        WHERE date(timestamp/1000, 'unixepoch') = date('now', '-1 day')
+        WHERE strftime('%Y-%m-%d', datetime(timestamp / 1000, 'unixepoch')) = strftime('%Y-%m-%d', 'now', '-1 day')
     """)
     fun getYesterdaysCupCount(): LiveData<Int>
 
-    @Query("SELECT * FROM coffee_logs WHERE date(timestamp/1000, 'unixepoch') = date('now')")
+    @Query("""
+        SELECT * FROM coffee_logs 
+        WHERE strftime('%Y-%m-%d', datetime(timestamp / 1000, 'unixepoch')) = strftime('%Y-%m-%d', 'now')
+        ORDER BY timestamp DESC
+    """)
     fun getTodaysLogs(): LiveData<List<CoffeeLog>>
 
     @Query("""
         SELECT * FROM coffee_logs 
-        WHERE date(timestamp/1000, 'unixepoch') = date('now', '-1 day')
+        WHERE strftime('%Y-%m-%d', datetime(timestamp / 1000, 'unixepoch')) = strftime('%Y-%m-%d', 'now', '-1 day')
+        ORDER BY timestamp DESC
     """)
     fun getYesterdaysLogs(): LiveData<List<CoffeeLog>>
 
