@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">La Aplicación de Café</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Encabezado de navegación</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Galería</string>
+    <string name="menu_slideshow">Presentación</string>
+    
+    <!-- Home Fragment -->
+    <string name="background_image">Imagen de fondo de café</string>
+    <string name="today_count_label">Tazas de Hoy</string>
+    <string name="yesterday_count_label">Tazas de Ayer</string>
+    <string name="add_cup_button">Agregar Taza</string>
+    <string name="loading_quote">Cargando cita diaria…</string>
+</resources>
