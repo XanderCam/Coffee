@@ -27,7 +27,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build with Gradle
-      run: ./gradlew build --no-daemon
+      run: ./gradlew assembleDebug --no-daemon --console=plain
       env:
         GRADLE_OPTS: "-Xmx6g -XX:MaxMetaspaceSize=2g -XX:+HeapDumpOnOutOfMemoryError -Dorg.gradle.jvmargs=-Xmx6g"
         JAVA_OPTS: "-Xmx6g"
