@@ -30,11 +30,7 @@ jobs:
       uses: android-actions/setup-android@v2
 
     - name: Build with Gradle
-      run: |
-        ./gradlew clean
-        ./gradlew :app:assembleDebug --info --stacktrace
-      env:
-        GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=512m"
+      run: ./gradlew assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
