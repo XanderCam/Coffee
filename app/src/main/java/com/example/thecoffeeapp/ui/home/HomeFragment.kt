@@ -16,6 +16,7 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+import com.example.thecoffeeapp.R
 import com.example.thecoffeeapp.databinding.FragmentHomeBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.launch
@@ -45,9 +46,9 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupBackgroundImage() {
-        // Load the coffee cup image from a direct URL
+        // Load the coffee cup image from drawable resources
         Glide.with(requireContext())
-            .load("https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg")
+            .load(R.drawable.bg_coffee_cup)
             .centerCrop()
             .transition(DrawableTransitionOptions.withCrossFade())
             .error(android.R.drawable.ic_menu_gallery)
