@@ -26,11 +26,21 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Build with Gradle
-      run: ./gradlew assembleDebug --no-daemon --console=plain --debug --stacktrace
+    - name: Clean project
+      run: ./gradlew clean --no-daemon
       env:
-        GRADLE_OPTS: "-Xmx8g -XX:MaxMetaspaceSize=3g -XX:+HeapDumpOnOutOfMemoryError -Dorg.gradle.jvmargs=-Xmx8g -Dorg.gradle.debug=true"
-        JAVA_OPTS: "-Xmx8g -XX:+ShowCodeDetailsInExceptionMessages"
+        GRADLE_OPTS: "-Xmx4g -XX:MaxMetaspaceSize=2g"
+
+    - name: Download dependencies
+      run: ./gradlew androidDependencies --no-daemon
+      env:
+        GRADLE_OPTS: "-Xmx4g -XX:MaxMetaspaceSize=2g"
+
+    - name: Build debug APK
+      run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
+      env:
+        GRADLE_OPTS: "-Xmx8g -XX:MaxMetaspaceSize=3g -Dkotlin.daemon.jvm.options=-Xmx4g"
+        JAVA_OPTS: "-Xmx8g"
 
     - name: Upload build reports
       if: always()
