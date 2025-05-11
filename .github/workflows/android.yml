@@ -26,14 +26,17 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: wrapper
+
     - name: Build Debug APK
       run: |
         ./gradlew :app:clean
-        ./gradlew :app:assembleDebug --console=plain --stacktrace || {
-          echo "Build failed. Checking Gradle wrapper..."
-          ./gradlew --version
-          exit 1
-        }
+        ./gradlew :app:assembleDebug --console=plain --stacktrace
+      env:
+        GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.workers.max=2"
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
