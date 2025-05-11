@@ -26,15 +26,8 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Setup Android SDK
-      uses: android-actions/setup-android@v3
-      with:
-        cmdline-tools-version: latest
-
-    - name: Clean and Build Debug APK
-      run: |
-        ./gradlew clean
-        ./gradlew :app:assembleDebug --console=plain --stacktrace --info
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug --stacktrace
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
