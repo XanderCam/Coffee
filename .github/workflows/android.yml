@@ -27,12 +27,9 @@ jobs:
       run: chmod +x gradlew
 
     - name: Setup Android SDK
-      uses: android-actions/setup-android@v3
+      uses: android-actions/setup-android@v2
       with:
-        cmdline-tools-version: '8.0'
-        build-tools-version: '33.0.0'
-        platform-version: '33'
-        ndk-version: '25.1.8937393'
+        sdk-platform: '33'
 
     - name: Build with Gradle
       run: ./gradlew assembleDebug
