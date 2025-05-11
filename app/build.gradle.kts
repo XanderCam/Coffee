@@ -37,6 +37,11 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    
+    androidResources {
+        generateLocaleConfig = true
+        ignoreAssetsPattern = "!.svn:!.git:!.gitignore:!.ds_store:!*.scc:.*:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
 }
 
 dependencies {
