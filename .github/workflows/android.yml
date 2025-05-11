@@ -22,29 +22,15 @@ jobs:
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
-      with:
-        gradle-version: wrapper
-        cache-read-only: false
-        gradle-home-cache-cleanup: true
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Clean project
-      run: ./gradlew clean --no-daemon
-      env:
-        GRADLE_OPTS: "-Xmx2g -XX:MaxMetaspaceSize=512m"
-
-    - name: Run lint
-      run: ./gradlew lintDebug --no-daemon --warning-mode=all
-      env:
-        GRADLE_OPTS: "-Xmx2g -XX:MaxMetaspaceSize=512m"
-
     - name: Build with Gradle
-      run: ./gradlew assembleDebug --no-daemon --stacktrace --warning-mode=all --info
+      run: ./gradlew build --no-daemon
       env:
-        GRADLE_OPTS: "-Xmx4g -XX:MaxMetaspaceSize=2g -Dkotlin.daemon.jvm.options=-Xmx2g"
-        JAVA_OPTS: "-Xmx4g"
+        GRADLE_OPTS: "-Xmx6g -XX:MaxMetaspaceSize=2g -XX:+HeapDumpOnOutOfMemoryError -Dorg.gradle.jvmargs=-Xmx6g"
+        JAVA_OPTS: "-Xmx6g"
 
     - name: Upload build reports
       if: always()
