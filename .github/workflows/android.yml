@@ -31,8 +31,10 @@ jobs:
       with:
         cmdline-tools-version: latest
 
-    - name: Build Debug APK
-      run: ./gradlew :app:assembleDebug --console=plain --stacktrace
+    - name: Clean and Build Debug APK
+      run: |
+        ./gradlew clean
+        ./gradlew :app:assembleDebug --console=plain --stacktrace --info
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
