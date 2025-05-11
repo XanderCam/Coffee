@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.thecoffeeapp"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.thecoffeeapp"
-        minSdk = 34
-        targetSdk = 35
+        minSdk = 24
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -37,11 +37,9 @@ android {
     buildFeatures {
         viewBinding = true
     }
-    buildToolsVersion = "35.0.1"
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
