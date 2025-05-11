@@ -22,11 +22,14 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Build app module
+    - name: Setup build environment
       run: |
-        ./gradlew tasks
-        ./gradlew :app:dependencies
-        ./gradlew :app:assembleDebug --info --stacktrace
+        echo "org.gradle.daemon=false" >> gradle.properties
+        echo "org.gradle.jvmargs=-Xmx2g" >> gradle.properties
+        echo "android.enableJetifier=false" >> gradle.properties
+
+    - name: Build app module
+      run: ./gradlew :app:assembleDebug --scan
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
