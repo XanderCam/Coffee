@@ -27,10 +27,10 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build with Gradle
-      run: ./gradlew assembleDebug --no-daemon --console=plain
+      run: ./gradlew assembleDebug --no-daemon --console=plain --debug --stacktrace
       env:
-        GRADLE_OPTS: "-Xmx6g -XX:MaxMetaspaceSize=2g -XX:+HeapDumpOnOutOfMemoryError -Dorg.gradle.jvmargs=-Xmx6g"
-        JAVA_OPTS: "-Xmx6g"
+        GRADLE_OPTS: "-Xmx8g -XX:MaxMetaspaceSize=3g -XX:+HeapDumpOnOutOfMemoryError -Dorg.gradle.jvmargs=-Xmx8g -Dorg.gradle.debug=true"
+        JAVA_OPTS: "-Xmx8g -XX:+ShowCodeDetailsInExceptionMessages"
 
     - name: Upload build reports
       if: always()
