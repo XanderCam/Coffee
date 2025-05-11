@@ -6,7 +6,7 @@ import java.util.Date
 
 @Dao
 interface CoffeeLogDao {
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertLog(coffeeLog: CoffeeLog)
 
     @Query("SELECT * FROM coffee_logs ORDER BY timestamp DESC")
@@ -34,5 +34,5 @@ interface CoffeeLogDao {
     suspend fun deleteLog(coffeeLog: CoffeeLog)
 
     @Query("DELETE FROM coffee_logs")
-    suspend fun deleteAllLogs(): Int  // Changed return type to Int to indicate number of rows deleted
+    suspend fun deleteAllLogs(): Int
 }
