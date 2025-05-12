@@ -36,11 +36,18 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
     
     androidResources {
         generateLocaleConfig = true
         ignoreAssetsPattern = "!.svn:!.git:!.gitignore:!.ds_store:!*.scc:.*:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
