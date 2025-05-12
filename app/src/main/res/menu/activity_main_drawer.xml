@@ -7,15 +7,15 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_coffee_cup"
-            android:title="Coffee Counter" />
+            android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_recipes"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Recipes" />
+            android:title="@string/menu_recipes" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Settings" />
+            android:title="@string/menu_settings" />
     </group>
 
     <!-- Ad Space at Bottom -->
@@ -24,7 +24,7 @@
             <item
                 android:id="@+id/nav_ad_space"
                 android:enabled="false"
-                android:title="Advertisement"
+                android:title="@string/menu_ad_space"
                 android:orderInCategory="100"/>
         </menu>
     </item>
