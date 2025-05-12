@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">The Coffee App</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -7,14 +8,15 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Coffee Counter</string>
+    <string name="menu_recipes">Recipes</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_ad_space">Advertisement</string>
     
     <!-- Home Fragment -->
     <string name="background_image">Coffee background image</string>
-    <string name="today_count_label">Today\'s Coffee Count</string>
-    <string name="yesterday_count_label">Yesterday\'s Count</string>
+    <string name="today_count_label">Today's Coffee Count</string>
+    <string name="yesterday_count_label">Yesterday's Count</string>
     <string name="add_cup_button">Add Cup</string>
     <string name="loading_quote">Loading daily quote…</string>
 </resources>
