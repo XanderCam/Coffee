@@ -3,8 +3,8 @@
     <string name="app_name">La Aplicación de Café</string>
     <string name="navigation_drawer_open">Abrir menú de navegación</string>
     <string name="navigation_drawer_close">Cerrar menú de navegación</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">La Aplicación de Café</string>
+    <string name="nav_header_subtitle">Sigue tu viaje diario del café</string>
     <string name="nav_header_desc">Encabezado de navegación</string>
     <string name="action_settings">Configuración</string>
 
