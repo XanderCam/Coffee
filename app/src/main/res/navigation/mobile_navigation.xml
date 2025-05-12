@@ -23,10 +23,4 @@
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
 
-    <fragment
-        android:id="@+id/nav_video"
-        android:name="com.example.thecoffeeapp.ui.video.VideoRecordingFragment"
-        android:label="@string/menu_video"
-        tools:layout="@layout/fragment_video_recording" />
-
 </navigation>
