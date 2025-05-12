@@ -8,19 +8,25 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.thecoffeeapp.ui.home.HomeFragment"
-        android:label="Coffee Counter"
+        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_recipes"
         android:name="com.example.thecoffeeapp.ui.recipes.RecipesFragment"
-        android:label="Recipes"
+        android:label="@string/menu_recipes"
         tools:layout="@layout/fragment_recipes" />
 
     <fragment
         android:id="@+id/nav_settings"
         android:name="com.example.thecoffeeapp.ui.settings.SettingsFragment"
-        android:label="Settings"
+        android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.example.thecoffeeapp.ui.video.VideoRecordingFragment"
+        android:label="@string/menu_video"
+        tools:layout="@layout/fragment_video_recording" />
 
 </navigation>
