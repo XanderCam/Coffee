@@ -1,80 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="daily_quotes">
-        <item>Life begins after coffee.</item>
-        <item>But first, coffee.</item>
-        <item>Coffee: because adulting is hard.</item>
-        <item>May your coffee be strong and your Monday be short.</item>
-        <item>Coffee makes everything possible.</item>
-        <item>Coffee: a magical substance that turns "leave me alone" into "good morning!"</item>
-        <item>Behind every successful person is a substantial amount of coffee.</item>
-        <item>Coffee: because anger management is too expensive.</item>
-        <item>Today\'s good mood is sponsored by coffee.</item>
-        <item>Coffee is always a good idea.</item>
-        <item>Coffee: because it\'s too early for wine.</item>
-        <item>I believe in coffee and the occasional miracle.</item>
-        <item>Coffee first. Schemes later.</item>
-        <item>Coffee helps me maintain my "never killed anyone" streak.</item>
-        <item>Coffee is my love language.</item>
-        <item>Coffee: because adulting requires fuel.</item>
-        <item>Coffee: the most important meal of the day.</item>
-        <item>Coffee solves everything.</item>
-        <item>Keep calm and drink coffee.</item>
-        <item>Coffee: because sleep is overrated.</item>
-        <item>Coffee makes me feel less murdery.</item>
-        <item>Coffee: liquid productivity.</item>
-        <item>Coffee: because mornings shouldn\'t exist.</item>
-        <item>Coffee is my spirit animal.</item>
-        <item>Coffee: turning "I can\'t" into "I can".</item>
-        <item>Coffee: because adulting is hard.</item>
-        <item>Coffee: because chaos coordinator needs fuel.</item>
-        <item>Coffee: making the impossible possible since forever.</item>
-        <item>Coffee: because Monday has too many letters.</item>
-        <item>Coffee: the Earth\'s favorite wake-up call.</item>
-        <item>Coffee: because mornings and I aren\'t on speaking terms.</item>
-        <item>Coffee: because reality is just too real.</item>
-        <item>Coffee: making humans less horrible since forever.</item>
-        <item>Coffee: because adulting requires magic.</item>
-        <item>Coffee: turning "go away" into "good morning" since forever.</item>
-        <item>Coffee: because morning people are annoying.</item>
-        <item>Coffee: because mornings aren\'t real until coffee.</item>
-        <item>Coffee: because silence is not an option.</item>
-        <item>Coffee: because waking up is hard.</item>
-        <item>Coffee: the answer to life, the universe, and everything.</item>
-        <item>Coffee: because sleep is for the weak.</item>
-        <item>Coffee: making mornings possible since forever.</item>
-        <item>Coffee: because Monday needs a friend.</item>
-        <item>Coffee: because morning meetings exist.</item>
-        <item>Coffee: turning zombies into humans since forever.</item>
-        <item>Coffee: because morning people are too perky.</item>
-        <item>Coffee: because morning isn\'t optional.</item>
-        <item>Coffee: making humans functional since forever.</item>
-        <item>Coffee: because morning requires magic.</item>
-        <item>Coffee: the best part of waking up.</item>
-        <item>Coffee: because morning shouldn\'t be this early.</item>
-        <item>Coffee: making the world go round since forever.</item>
-        <item>Coffee: because morning needs help.</item>
-        <item>Coffee: turning grumpy into great since forever.</item>
-        <item>Coffee: because morning isn\'t my thing.</item>
-        <item>Coffee: making mornings bearable since forever.</item>
-        <item>Coffee: because morning needs a kickstart.</item>
-        <item>Coffee: turning "ugh" into "okay" since forever.</item>
-        <item>Coffee: because morning is hard.</item>
-        <!-- Add more quotes to reach 365 -->
-        <!-- Note: For brevity in this example, I'm showing a subset. In production, we would have all 365 quotes -->
+    <string-array name="coffee_quotes">
+        <item>Time to brew! The perfect temperature for pour-over coffee is 195-205°F (90-96°C)</item>
+        <item>Did you know? Cold brew is best steeped at 68-72°F (20-22°C)</item>
+        <item>Hot coffee at 185°F (85°C)? Perfect for a chilly morning!</item>
+        <item>Keep your coffee warm between 160-170°F (71-77°C) for optimal flavor</item>
+        <item>Espresso extraction sweet spot: 190-196°F (88-91°C)</item>
+        <item>Room temperature coffee at 68°F (20°C) reveals unique flavor notes</item>
+        <item>French Press brewing tip: Start with water at 200°F (93°C)</item>
+        <item>Iced coffee is best served at 35-40°F (2-4°C) for maximum refreshment</item>
+        <item>Coffee starts to lose flavor below 150°F (66°C). Time for a fresh cup!</item>
+        <item>Store your beans at 68°F (20°C) for optimal freshness</item>
     </string-array>
 
-    <!-- Taunt messages for when coffee consumption is high -->
     <string-array name="coffee_taunts">
-        <item>Whoa there, caffeine warrior! Maybe switch to water?</item>
-        <item>Your blood type might be changing to "Coffee Positive"...</item>
-        <item>Coffee is not a food group... yet.</item>
-        <item>Your coffee intake is reaching astronomical levels!</item>
-        <item>Time to give your coffee maker a break?</item>
-        <item>You\'re making baristas proud... and doctors worried.</item>
-        <item>Your coffee cup is becoming a permanent hand accessory!</item>
-        <item>Coffee addiction level: Expert</item>
-        <item>Maybe try tea? Just kidding!</item>
-        <item>Your coffee consumption is too damn high!</item>
+        <item>Your coffee is getting cold! It's dropped below 140°F (60°C)</item>
+        <item>Time for a refill! Your coffee's probably at room temp (68°F/20°C) by now</item>
+        <item>Hot coffee calling! 185°F (85°C) of pure joy awaits</item>
+        <item>Need a pick-me-up? A fresh brew at 200°F (93°C) should do the trick!</item>
+        <item>Perfect brewing weather! Water's at the ideal 195°F (90°C)</item>
+        <item>Too hot to handle? Let it cool to 160°F (71°C) for best taste</item>
+        <item>Craving an iced coffee? A cool 38°F (3°C) sounds refreshing!</item>
+        <item>Your coffee's getting lonely at 72°F (22°C). Time for a new friend?</item>
+        <item>Hot or cold? Choose between 190°F (88°C) or 40°F (4°C) perfection</item>
+        <item>Coffee temperature check! Aim for 175°F (79°C) for optimal sipping</item>
     </string-array>
 </resources>
