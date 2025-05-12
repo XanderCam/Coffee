@@ -1,13 +1,17 @@
 package com.example.thecoffeeapp.util
 
+import android.Manifest
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import androidx.core.content.ContextCompat
 import com.example.thecoffeeapp.MainActivity
 import com.example.thecoffeeapp.R
 
@@ -37,6 +41,10 @@ class NotificationHelper(private val context: Context) {
     }
 
     fun showDailyQuoteNotification(quote: String) {
+        if (!hasNotificationPermission()) {
+            return
+        }
+
         val intent = Intent(context, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
@@ -49,8 +57,8 @@ class NotificationHelper(private val context: Context) {
         )
 
         val builder = NotificationCompat.Builder(context, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_menu_gallery) // TODO: Replace with coffee cup icon
-            .setContentTitle("Daily Coffee Quote")
+            .setSmallIcon(R.drawable.ic_coffee_cup)
+            .setContentTitle("☕ Daily Coffee Quote")
             .setContentText(quote)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setContentIntent(pendingIntent)
@@ -61,8 +69,18 @@ class NotificationHelper(private val context: Context) {
                 notify(NOTIFICATION_ID, builder.build())
             }
         } catch (e: SecurityException) {
-            // Handle case where notification permission is not granted
             e.printStackTrace()
+        }
+    }
+
+    private fun hasNotificationPermission(): Boolean {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            ContextCompat.checkSelfPermission(
+                context,
+                Manifest.permission.POST_NOTIFICATIONS
+            ) == PackageManager.PERMISSION_GRANTED
+        } else {
+            true
         }
     }
 

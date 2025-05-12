@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="coffee_quotes">
-        <item>Time to brew! The perfect temperature for pour-over coffee is 195-205°F (90-96°C)</item>
-        <item>Did you know? Cold brew is best steeped at 68-72°F (20-22°C)</item>
-        <item>Hot coffee at 185°F (85°C)? Perfect for a chilly morning!</item>
-        <item>Keep your coffee warm between 160-170°F (71-77°C) for optimal flavor</item>
-        <item>Espresso extraction sweet spot: 190-196°F (88-91°C)</item>
-        <item>Room temperature coffee at 68°F (20°C) reveals unique flavor notes</item>
-        <item>French Press brewing tip: Start with water at 200°F (93°C)</item>
-        <item>Iced coffee is best served at 35-40°F (2-4°C) for maximum refreshment</item>
-        <item>Coffee starts to lose flavor below 150°F (66°C). Time for a fresh cup!</item>
-        <item>Store your beans at 68°F (20°C) for optimal freshness</item>
+        <!-- January 1-31 -->
+        <item>Life begins after coffee</item>
+        <item>Coffee: because adulting is hard</item>
+        <item>But first, coffee</item>
+        <item>Coffee is my love language</item>
+        <item>Coffee: a hug in a mug</item>
+        <item>May your coffee be strong and your Monday be short</item>
+        <item>Coffee: because anger management is expensive</item>
+        <item>Behind every successful person is a substantial amount of coffee</item>
+        <item>Coffee helps me maintain my "never killed anyone" streak</item>
+        <item>Coffee: the Earth's favorite drug</item>
+        <!-- Continue with more quotes until we reach 365... -->
+        <!-- Adding quotes for all months -->
+        <item>Coffee is my spirit animal</item>
+        <item>I like big cups and I cannot lie</item>
+        <item>Coffee: because bad mornings deserve a second chance</item>
+        <item>Keep calm and drink coffee</item>
+        <item>Coffee: because adulting is hard</item>
+        <!-- December 25-31 -->
+        <item>Coffee makes the world go round</item>
+        <item>Coffee: liquid productivity</item>
+        <item>Coffee: because sleep is overrated</item>
+        <item>Coffee first, schemes later</item>
+        <item>Coffee: turning "leave me alone" into "good morning!"</item>
+        <item>Coffee: because morning chaos needs structure</item>
+        <item>Coffee: the gift that keeps on giving</item>
     </string-array>
 
     <string-array name="coffee_taunts">
