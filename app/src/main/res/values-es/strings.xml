@@ -12,7 +12,6 @@
     <string name="menu_recipes">Recetas</string>
     <string name="menu_settings">Configuración</string>
     <string name="menu_ad_space">Publicidad</string>
-    <string name="menu_video">Grabación de Video</string>
     
     <!-- Home Fragment -->
     <string name="background_image">Imagen de fondo de café</string>
@@ -20,19 +19,4 @@
     <string name="yesterday_count_label">Tazas de Ayer</string>
     <string name="add_cup_button">Agregar Taza</string>
     <string name="loading_quote">Cargando cita diaria…</string>
-
-    <!-- Video Recording Fragment -->
-    <string name="video_recording_title">Graba Momentos de Café</string>
-    <string name="start_recording">Comenzar Grabación</string>
-    <string name="stop_recording">Detener Grabación</string>
-    <string name="pause_recording">Pausar</string>
-    <string name="resume_recording">Reanudar</string>
-    <string name="play_video">Reproducir</string>
-    <string name="save_video">Guardar</string>
-    <string name="video_saved">Video guardado exitosamente</string>
-    <string name="video_save_error">Error al guardar el video</string>
-    <string name="camera_permission_required">Se requiere permiso de cámara</string>
-    <string name="audio_permission_required">Se requiere permiso de micrófono</string>
-    <string name="storage_permission_required">Se requiere permiso de almacenamiento</string>
-    <string name="grant_permissions">Otorgar Permisos</string>
 </resources>
