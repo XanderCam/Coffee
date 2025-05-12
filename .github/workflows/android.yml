@@ -23,6 +23,9 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v2
 
+    - name: Accept Android SDK licenses
+      run: yes | sdkmanager --licenses
+
     - name: Cache Gradle packages
       uses: actions/cache@v3
       with:
@@ -37,7 +40,11 @@ jobs:
       run: chmod +x gradlew
       
     - name: Build with Gradle
-      run: ./gradlew assembleDebug --stacktrace
+      env:
+        ANDROID_HOME: /usr/local/lib/android/sdk
+      run: |
+        echo "sdk.dir=$ANDROID_HOME" > local.properties
+        ./gradlew assembleDebug --stacktrace
 
     - name: Upload APK
       uses: actions/upload-artifact@v3
