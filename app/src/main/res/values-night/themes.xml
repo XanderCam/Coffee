@@ -21,11 +21,15 @@
         <item name="android:textColorSecondary">@color/cream</item>
         <item name="android:textColorHint">@color/coffee_light</item>
         
-        <!-- Card styles -->
-        <item name="cardBackgroundColor">@color/coffee_dark</item>
+        <!-- Glass effect values -->
+        <item name="glassEffectBackground">@color/coffee_dark</item>
+        <item name="glassEffectAlpha">0.85</item>
+        <item name="glassEffectElevation">4dp</item>
         
-        <!-- Button styles -->
+        <!-- Component styles -->
         <item name="materialButtonStyle">@style/Widget.TheCoffeeApp.Button.Dark</item>
+        <item name="tabStyle">@style/Widget.TheCoffeeApp.TabLayout.Dark</item>
+        <item name="materialCardViewStyle">@style/Widget.TheCoffeeApp.Card</item>
     </style>
 
     <!-- No ActionBar theme for MainActivity -->
@@ -46,11 +50,19 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <!-- Glass effect style for dark theme -->
+    <!-- Tab style for dark theme -->
+    <style name="Widget.TheCoffeeApp.TabLayout.Dark" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextColor">@color/cream</item>
+        <item name="tabSelectedTextColor">@color/coffee_light</item>
+        <item name="tabIndicatorColor">@color/coffee_light</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Glass effect style -->
     <style name="GlassEffect">
-        <item name="android:background">@color/black</item>
-        <item name="android:alpha">0.85</item>
-        <item name="android:elevation">4dp</item>
+        <item name="android:background">?attr/glassEffectBackground</item>
+        <item name="android:alpha">?attr/glassEffectAlpha</item>
+        <item name="android:elevation">?attr/glassEffectElevation</item>
     </style>
 
     <!-- Toolbar styles -->

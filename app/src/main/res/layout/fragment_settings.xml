@@ -12,8 +12,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#CCFFFFFF"
-            android:alpha="0.9"/>
+            style="@style/GlassEffect"/>
 
         <!-- Notifications Section -->
         <com.google.android.material.card.MaterialCardView
@@ -21,8 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
+            style="@style/Widget.TheCoffeeApp.Card"
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
@@ -54,8 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
+            style="@style/Widget.TheCoffeeApp.Card"
             app:layout_constraintTop_toBottomOf="@id/notificationsCard">
 
             <LinearLayout
@@ -94,8 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
+            style="@style/Widget.TheCoffeeApp.Card"
             app:layout_constraintTop_toBottomOf="@id/supportCard">
 
             <LinearLayout
@@ -133,7 +129,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_margin="16dp"
-            android:background="#EEEEEE"
+            android:background="?attr/glassEffectBackground"
+            android:alpha="?attr/glassEffectAlpha"
             app:layout_constraintTop_toBottomOf="@id/aboutCard"
             app:layout_constraintBottom_toBottomOf="parent"/>
 

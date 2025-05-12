@@ -21,11 +21,15 @@
         <item name="android:textColorSecondary">@color/text_secondary</item>
         <item name="android:textColorHint">@color/text_hint</item>
         
-        <!-- Card styles -->
-        <item name="cardBackgroundColor">@color/cream_light</item>
+        <!-- Glass effect values -->
+        <item name="glassEffectBackground">@color/white</item>
+        <item name="glassEffectAlpha">0.85</item>
+        <item name="glassEffectElevation">4dp</item>
         
-        <!-- Button styles -->
+        <!-- Component styles -->
         <item name="materialButtonStyle">@style/Widget.TheCoffeeApp.Button</item>
+        <item name="tabStyle">@style/Widget.TheCoffeeApp.TabLayout</item>
+        <item name="materialCardViewStyle">@style/Widget.TheCoffeeApp.Card</item>
     </style>
 
     <!-- No ActionBar theme for MainActivity -->
@@ -50,10 +54,30 @@
     <style name="Theme.TheCoffeeApp.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
     <style name="Theme.TheCoffeeApp.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
+    <!-- Glass effect attributes -->
+    <attr name="glassEffectBackground" format="color" />
+    <attr name="glassEffectAlpha" format="float" />
+    <attr name="glassEffectElevation" format="dimension" />
+
     <!-- Glass effect style -->
     <style name="GlassEffect">
-        <item name="android:background">@color/white</item>
-        <item name="android:alpha">0.85</item>
-        <item name="android:elevation">4dp</item>
+        <item name="android:background">?attr/glassEffectBackground</item>
+        <item name="android:alpha">?attr/glassEffectAlpha</item>
+        <item name="android:elevation">?attr/glassEffectElevation</item>
+    </style>
+
+    <!-- Tab style -->
+    <style name="Widget.TheCoffeeApp.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextColor">?attr/colorOnSurface</item>
+        <item name="tabSelectedTextColor">?attr/colorPrimary</item>
+        <item name="tabIndicatorColor">?attr/colorPrimary</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="Widget.TheCoffeeApp.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?attr/glassEffectBackground</item>
+        <item name="cardElevation">?attr/glassEffectElevation</item>
+        <item name="cardCornerRadius">12dp</item>
     </style>
 </resources>

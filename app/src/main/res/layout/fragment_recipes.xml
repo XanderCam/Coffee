@@ -8,17 +8,13 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CCFFFFFF"
-        android:alpha="0.9"/>
+        style="@style/GlassEffect"/>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:tabTextColor="#80000000"
-        app:tabSelectedTextColor="#000000"
-        app:tabIndicatorColor="#000000"
+        style="@style/Widget.TheCoffeeApp.TabLayout"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
