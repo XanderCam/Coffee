@@ -28,6 +28,12 @@
         <item name="materialButtonStyle">@style/Widget.TheCoffeeApp.Button.Dark</item>
     </style>
 
+    <!-- No ActionBar theme for MainActivity -->
+    <style name="Theme.TheCoffeeApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <!-- Custom Button style for dark theme -->
     <style name="Widget.TheCoffeeApp.Button.Dark" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/coffee_light</item>
@@ -46,4 +52,8 @@
         <item name="android:alpha">0.85</item>
         <item name="android:elevation">4dp</item>
     </style>
+
+    <!-- Toolbar styles -->
+    <style name="Theme.TheCoffeeApp.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+    <style name="Theme.TheCoffeeApp.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Dark" />
 </resources>
