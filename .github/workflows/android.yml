@@ -51,14 +51,21 @@ jobs:
         echo "sdk.dir=$ANDROID_HOME" > local.properties
         ./gradlew assembleDebug --stacktrace
 
+    - name: List APK directory
+      run: ls -l app/build/outputs/apk/debug/
+
+    - name: List build reports directory
+      run: ls -l app/build/reports/
+
     - name: Upload APK
+      if: success() && (exists('app/build/outputs/apk/debug/app-debug.apk'))
       uses: actions/upload-artifact@v3
       with:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
 
     - name: Upload build reports
-      if: always()
+      if: always() && (exists('app/build/reports/'))
       uses: actions/upload-artifact@v3
       with:
         name: build-reports
