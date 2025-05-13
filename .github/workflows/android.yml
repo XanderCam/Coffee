@@ -86,6 +86,18 @@ jobs:
           -Pandroid.injected.signing.key.alias=$KEY_ALIAS \
           -Pandroid.injected.signing.key.password=$KEY_PASSWORD --stacktrace
 
+    - name: List release APK directory
+      run: ls -l app/build/outputs/apk/release/
+
+    - name: Check if release APK exists
+      run: |
+        if [ -f app/build/outputs/apk/release/app-release.apk ]; then
+          echo "Release APK exists."
+        else
+          echo "Release APK does NOT exist."
+          exit 1
+        fi
+
     - name: Upload release APK
       if: success() && (exists('app/build/outputs/apk/release/app-release.apk'))
       uses: actions/upload-artifact@v3
