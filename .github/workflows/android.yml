@@ -64,6 +64,35 @@ jobs:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
 
+    # Note: The uploaded APK artifact can be downloaded from the GitHub Actions run summary page under "Artifacts".
+
+    # Release build with signing
+    - name: Setup signing key
+      if: github.event_name == 'push'
+      run: |
+        echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > release.keystore
+      shell: bash
+
+    - name: Build release APK
+      env:
+        ANDROID_HOME: ${{ runner.workspace }}/android-sdk
+        KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      run: |
+        echo "sdk.dir=$ANDROID_HOME" > local.properties
+        ./gradlew assembleRelease -Pandroid.injected.signing.store.file=release.keystore \
+          -Pandroid.injected.signing.store.password=$KEYSTORE_PASSWORD \
+          -Pandroid.injected.signing.key.alias=$KEY_ALIAS \
+          -Pandroid.injected.signing.key.password=$KEY_PASSWORD --stacktrace
+
+    - name: Upload release APK
+      if: success() && (exists('app/build/outputs/apk/release/app-release.apk'))
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-release
+        path: app/build/outputs/apk/release/app-release.apk
+
     - name: Upload build reports
       if: always() && (exists('app/build/reports/'))
       uses: actions/upload-artifact@v3
